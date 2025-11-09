@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Auth System</title>
+  <link rel="stylesheet" href=style.css>
+</head>
+<body>
+  <div class="container">
+    <h1 id="welcomeUser"></h1>
+    <p>🎉 You have successfully logged in!</p>
+    <button id="logoutBtn">Logout</button>
+  </div>
+
+  <script>
+    const currentUser = localStorage.getItem('loggedInUser');
+    if (!currentUser) {
+      alert("Please login first!");
+      window.location.href = index.html;
+    } else {
+      document.getElementById('welcomeUser').innerText = "Welcome, " + currentUser + "!";
+    }
+
+    document.getElementById('logoutBtn').addEventListener('click', () => {
+      localStorage.removeItem('loggedInUser');
+      window.location.href = index.html;
+    });
+  </script>
+</body>
+</html>
