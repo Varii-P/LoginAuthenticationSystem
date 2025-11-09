@@ -29,8 +29,7 @@ if (loginForm) {
     if (storedPassword === password) {
       document.getElementById('loginMessage').style.color = "green";
       document.getElementById('loginMessage').innerText = "Login successful!";
-      localStorage.setItem('loggedInUser', username);
-      setTimeout(() => window.location.href = dashboard.html, 1000);
+      setTimeout(() => alert("Welcome, " + username + "!"), 1000);
     } else {
       document.getElementById('loginMessage').innerText = "Invalid username or password!";
     }
