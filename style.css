@@ -1,0 +1,71 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.container {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  text-align: center;
+  width: 300px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #2575fc;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+}
+
+.link {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+a {
+  color: #2575fc;
+  text-decoration: none;
+}
+
+#loginMessage, #signupMessage {
+  margin-top: 10px;
+  font-weight: bold;
+  color: red;
+}
